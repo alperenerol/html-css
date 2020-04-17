@@ -1,0 +1,205 @@
+/* (*) means everything,reset to initials */
+/*
+*{
+    
+    margin: 0;
+    padding: 0; 
+} */
+
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* Same as above, shorter way */
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    line-height: 1.3em ;
+    margin: 0;
+}
+
+/* to adjust edge of website we create division with class 
+and adjust the width setting by using it*/
+.container{
+    width: 85%; /* its the limit,use percentages always, otherwise not responsive */
+    margin: auto; /* edit margin(spacing around border) all sizes */
+}
+
+.button{ 
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover{ /* hover üstüne geldiğindeki değişim */
+    color: #ffffff;
+    background: red;
+}
+
+.box-1{
+    background-color: #333333;
+    color:#ffffff;
+
+    
+    border-right: 5px red solid;
+    border-bottom: 5px red solid;
+    border-left: 5px red solid;
+    /* border: 5px red solid; SAME */ 
+    border-width: 3px;
+    border-top-style: dotted;
+    border-top: 5px red solid; /* overwrites */
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;    /* padding: 20px; */
+
+    margin-top: 20px;
+    margin: 20px 0;
+
+}
+
+.box-1 h1{
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+.box-2{
+    border: 3px dotted #cccccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border: 1px #cccccc solid;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 4px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check.png'); /* .. üst dizin*/
+}
+
+a{   /* (a) styling all links on webpage */
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{ /* hover üstüne geldiğindeki değişim */
+    color: red;
+}
+
+a:active{ /* clickleyince olan değişim */
+    color: green;
+}
+
+a:visited{
+    /* color: purple; */
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .formGroup{
+    padding-bottom: 15px;
+}
+.my-form label{
+    display: block; /* determines the type of box */
+}
+.my-form input[type="text"], .my-form input[type="email"], .my-form textarea{
+    padding: 8px;
+    width: 33%;
+} /* applying multiple elements */
+
+/* .my-form input[type="submit"]{ 
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+} */
+
+.block{
+    float: left; /* sola yapışık kalsın sayfa değiştikçe */
+    width: 33.3%; /* paragraf bloklarını yanyana dizdirdi(3 e böldü) */
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-sizing: border-box; /* applies border padding styles to width and height properties */
+}
+
+.clr{
+    clear: both; /* The clear property specifies on which sides of an element floating elements are not allowed to float. */
+}
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+    position: relative; /* determine p-box as relative element */
+    background-image:url(../images/2.jpg);
+    background-position: 0px 0px ;/* initial position of the background image(s) */
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+.p-box h1{
+    color: rebeccapurple;
+    position: absolute; /* referencing relative element(p-box) */
+    top: 100px;
+    left: 200px;
+}
+.p-box h2{
+    color: rebeccapurple;
+    position: absolute; /* referencing relative element(p-box) */
+    bottom: 40px;
+    right: 100px;
+}
+.fix-me{
+    position: fixed;
+    top: 400px; /* fixed positioned button */
+}
+
+/* Pseudo Classes: To  target certain things */
+.my-list li:first-child /* Represents an element that is the first child of some other element.use pseudo class by using (:) */{ 
+    background: red;
+}
+.my-list li:last-child{ 
+    background: blue;
+}
+.my-list li:nth-child(5) /* Represents an element that is the 5th child of some other element.use pseudo class by using (:) */{ 
+    background: yellow;
+}
+/* nth-child(number,even-odd) */

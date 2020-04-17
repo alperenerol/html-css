@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fetch API Sandbox</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  
+</head>
+<body>  
+<button id="getText">Get Text</button>
+<div id="output"></div>     
+
+  <script>
+    document.getElementById('getText').addEventListener('click', getText);
+    
+    function getText(){
+      p = fetch('sample.txt') // Promise
+      // takes resource as parameter, returns a promise? (A Promise is a proxy for a value not necessarily known when the promise is created. Like placeholder) 
+      // To work with promises we need to use (.then)
+      //p.then(onFulfilled[, onRejected]);
+      //onFullfilled has one argument, the fulfillment value(response).
+      //Once a Promise is fulfilled or rejected, the respective handler function (onFulfilled or onRejected) will be called asynchronously
+        //console.log(p); // p = a pending promise, status=resolved, value=Response
+      p.then((res) => res.text()) 
+      .then((data) => {
+          document.getElementById('output').innerHTML = data;
+      }) // res = Response which is value of Promise
+         // res.text()Gives desired data in response as value
+        // data = data in response. Promise > Response > Data
+        // data yı output a basıcaz
+        .catch((err) => console.log(err)) //log errors
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<style>
+    @media(min-width: 550px){
+        /* To prevent elements to float in smaller sizes  of browser. Columns become row for smaller values. */
+        .container-1{
+            display: flex;  /* make them side by side as default, The flex container becomes flexible by setting the display property to flex  */
+
+            /* align-items: flex-start;  yatay/çizgisel hizalama*/
+            /* flex-direction: column; alt alta koyar*/
+        }  
+        .container-2{
+            display: flex; 
+            /* justify-content: flex-start; Align ın yataydaki versiyonu*/
+            justify-content: space-between;
+        }  
+    }
+    .container-3{
+        display: flex;
+        flex-wrap: wrap; /* word wrap gibi sığmayan aşağı iner */
+        justify-content: space-between;
+    }
+
+    .container-1 div, .container-2 div, .container-3 div{
+      border: 1px #ccc solid;
+      padding: 10px;
+    }
+    .box-1{
+      flex: 2; /* The flex property sets the flexible length on flexible items. */
+      order: 2; /* just ordering */
+    }
+    .box-2{
+      flex: 1;
+      order: 1;
+    }
+    .box-3{
+      flex: 1; 
+      order: 3;
+    } /* 2 1 1 yarım çeyrek çeyrek oranlar 1 1 1 hepsi 3te bir oranı, yani oranlar pay edilir */
+    
+    .container-2-box{
+        /* width: 27%;  aralarındaki space belirler*/
+        flex-basis: 27%; /* equivalent of width */
+    }    
+    .container-3-box{
+        
+        flex-basis: 12%; /* herbir box un Yatayda ! kapladığı alan */
+    }    
+</style>
+
+  <div class="container-1">
+    <div class="box-1">
+      <h3>Box One</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="box-2">
+      <h3>Box Two</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="box-3">
+      <h3>Box Three</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="container-2">
+    <div class="container-2-box">
+      <h3>Box Four</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="container-2-box">
+      <h3>Box Five</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="container-2-box">
+      <h3>Box Six</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+  </div>
+  <div class="container-3">
+    <div class="container-3-box">
+      <h3>Box Seven</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Eight</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Nine</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Ten</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Eleven</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+    <div class="container-3-box">
+      <h3>Box Twelve</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec. </p>
+    </div>
+  </div>
+  

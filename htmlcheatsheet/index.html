@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Cheat Sheet</title>
+	</head>
+	<body>
+		<br>
+		<a href="blog.html">Go to Blog</a>
+		<h1>Heading One</h1>
+		<h2>Two Heading</h2>
+		<h3>Two Heading</h3>
+		<h4>Two Heading</h4>
+		<h5>Two Heading</h5>
+		<h6>Two Heading</h6>
+		<!-- Paragraphs -->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<!-- Lists -->
+		<ul>
+			<li> item 1 </li>
+			<li> item 2 </li>
+			<li> item 3 </li>
+			<li> item 4 </li>
+		</ul>
+
+		<ol>
+			<li> item 1 </li>
+			<li> item 2 </li>
+			<li> item 3 </li>
+			<li> item 4 </li>
+		</ol>
+
+		<!-- Tables -->
+
+		<table>
+			
+			<thead>  
+				<tr>  <!-- Table Row -->
+					<th>Name</th>    <!-- Sub Headings in that row --> 
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> Brad T</td>  <!-- Data not Heading -->
+					<td> Q@.uk</td>
+					<td> 33</td>
+				</tr>
+				<tr>
+					<td> Gerard T</td>  <!-- Data not Heading -->
+					<td> mm@.uk</td>
+					<td> 53</td>
+				</tr>
+			</tbody>
+
+		</table>
+
+		<!-- Forms -->
+
+		<form action="process.php" method="POST	">
+			
+			<div>
+				<label>First Name: </label>
+				<input type="text" name="firstName"> <!-- name attribute is about server side data grabbing-->
+			</div>
+			<br>
+			<div>
+				<label>Last Name: </label>
+				<input type="text" name="lastName">
+			</div>
+			<br>
+			<div>
+				<label>E-mail: </label>
+				<input type="email" name="email">
+			</div>
+			<br>
+			<div>
+				<label>Message: </label>
+				<textarea name="message"></textarea>
+			</div>
+			<br>
+			<div>
+				<label>Gender: </label>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<label>Age: </label>
+				<input type="number" name="age" value="30"> 
+				<!-- we can attached predefined shown value to input(can be change) -->
+			</div>
+			<br>
+			<div>
+				<label>Birthday: </label>
+				<input type="date" name="birthday">
+			</div>
+			<br>
+			<!-- Add input submit button -->
+			<input type="submit" value="SUBMIT" name="submit">
+		</form>
+		<br>
+		<!-- Image -->
+		<a href="images/erics.jpeg" target="_blank">  <!-- link associated with photo-->
+		<img src="images/erics.jpeg" alt="image not found" width="256">  
+		</a>
+		<br>
+		<!-- Quotations -->
+		<blockquote cite="wikipedia.com">  <!-- citation shown only in console -->
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+		<p>
+			The term <abbr title="Good game,Well played!">GGWP</abbr> used a lot by young gamers.
+		</p>
+		<p>
+			<cite> HTML web design </cite> by Rene Alpe. 
+		</p>
+	</body>
+</html>
